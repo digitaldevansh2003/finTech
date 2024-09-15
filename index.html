@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Buddy - Your Personal Financial Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Budget Buddy</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="#budget-overview">Budget Overview</a></li>
+                    <li><a href="#advice">Financial Advice</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <section class="section" id="user-input">
+                <h2>Your Financial Information</h2>
+                <form id="financial-form">
+                    <input type="number" id="income" placeholder="Monthly Income" required>
+                    <input type="number" id="expenses" placeholder="Monthly Expenses" required>
+                    <input type="number" id="savings" placeholder="Current Savings" required>
+                    <input type="number" id="debts" placeholder="Current Debt (if any)" required>
+                    <input type="number" id="investments" placeholder="Current Investments" required>
+                    <select id="age-group" required>
+                        <option value="">Select Your Age Group</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-45">36-45</option>
+                        <option value="46-60">46-60</option>
+                        <option value="60+">60+</option>
+                    </select>
+                    <select id="goal" required>
+                        <option value="">Select Your Primary Financial Goal</option>
+                        <option value="emergency-fund">Build Emergency Fund</option>
+                        <option value="debt-payoff">Pay Off Debt</option>
+                        <option value="retirement">Save for Retirement</option>
+                        <option value="home-purchase">Save for Home Purchase</option>
+                        <option value="investment-growth">Grow Investments</option>
+                    </select>
+                    <button type="submit">Get Personalized Advice</button>
+                </form>
+            </section>
+
+            <section class="section" id="budget-overview">
+                <h2>Budget Overview</h2>
+                <div id="budget-chart"></div>
+            </section>
+
+            <section class="section" id="savings-tracker">
+                <h2>Savings Tracker</h2>
+                <div id="savings-progress"></div>
+            </section>
+
+            <section class="section" id="advice">
+                <h2>Personalized Financial Advice</h2>
+                <div id="recommendations"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
